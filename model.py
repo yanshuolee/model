@@ -3,7 +3,7 @@ from keras.layers import Dense, Flatten, Conv1D, MaxPooling1D, AveragePooling1D,
 from keras.layers import BatchNormalization, Activation
 from keras.initializers import VarianceScaling
 from keras.optimizers import Adam
-from keras.utils import np_utils, multi_gpu_model
+from keras.utils import np_utils, multi_gpu_model, print_summary, plot_model
 
 model = Sequential()
 model.add(Conv1D(filters = 32, kernel_size = 7, padding='same', input_shape = (9000, 1)))
